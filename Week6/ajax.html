@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Practical</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<style type="text/css">
+	body{
+		margin-top: 20px;
+	}
+	section{
+		
+		margin-bottom:25px;
+	}
+	
+	section section{
+		border:1px solid #dddddd;
+		border-radius: 5px;
+	}
+	
+	#main-content{
+	margin-bottom:25px;
+	}
+</style>
+</head>
+<body class="container">
+<div id="main-content" class="row">
+	<section class="title col-sm-4" id="database-analyst-area" >
+	<table class="table table-striped" style="display: inline;">
+		<h2>Database Analyst</h2>
+		<tbody><tr><td>First Name:</td>
+		<td><div class="first"></div></td></tr>
+		<tr><td>Last Name:</td>
+		<td><div class="last"></div></td></tr>
+		<tr><td>Highest Paid Salary</td>
+		<td><div class="highest"></div></td></tr>
+		<tr><td>Highest Average Paid Salary</td>
+		<td><h3 class="average"></h3></td></tr></tbody>
+	</table>
+	</section >
+
+	<section class="title col-sm-4" id="web-developer-area" >
+	<table class="table table-striped" style="display: inline;">
+		<h2>Web Developer</h2>
+		<tbody><tr><td>First Name:</td>
+		<td><div class="first"></div></td></tr>
+		<tr><td>Last Name:</td>
+		<td><div class="last"></div></td></tr>
+		<tr><td>Highest Paid Salary</td>
+		<td><div class="highest"></div></td></tr>
+		<tr><td>Highest Average Paid Salary</td>
+		<td><h3 class="average"></h3></td></tr></tbody>
+	</table>
+	</section >
+
+	<section class="title col-sm-4" id="software-engineer-area" >
+	<table class="table table-striped" style="display: inline;">
+		<h2>Software Engineer</h2>
+		<tbody><tr><td>First Name:</td>
+		<td><div class="first"></div></td></tr>
+		<tr><td>Last Name:</td>
+		<td><div class="last"></div></td></tr>
+		<tr><td>Highest Paid Salary</td>
+		<td><div class="highest"></div></td></tr>
+		<tr><td>Highest Average Paid Salary</td>
+		<td><h3 class="average"></h3></td></tr></tbody>
+	</table>
+	</section >
+</div>
+	<section  id="search-area">
+		<div class="form-inline row">
+			<input type="text" placeholder="First Name" id="first-name" class="form-control col-sm-4">
+			<input type="text" placeholder="Last Name" id="last-name" class="form-control col-sm-4">
+			<div class="col-sm-4">
+				<button type="button" class="btn btn-xs btn-info" id="search-submit">search</button>
+				<button type="button" class="btn btn-xs btn-warning" id="search-clear">clear</button>
+			</div>
+		</div>
+		<div class="row">
+			<section id="search-output" class="col-sm-12">
+				<h2>Search Output</h2>
+				<div class="output">
+					<!--Output search info to here.-->
+				</div>
+			</section>
+		</div>
+	</section >
+
+	<section  id="list-area">
+		<div class="row">
+			<div class="col-md-4">
+				<button type="button" class="btn btn-xs btn-info" id="list-database-analyst">Database Analysts</button>
+			</div>
+			<div class="col-md-4">
+				<button type="button" class="btn btn-xs btn-info" id="list-web-developer">Web Developers</button>
+			</div>
+			<div class="col-md-4">
+				<button type="button" class="btn btn-xs btn-info" id="list-software-engineer">Software Developers</button>
+			</div>
+		</div>
+		<div class="row">
+			<section id="list-output" class="col-sm-12">
+				<h2>List Output</h2>
+					<div class="output">
+						<!--Output list info to here.-->
+					</div>
+			</section>
+		</div>
+	</section >
+
+</body>
+<script type='text/javascript' src="ajax.js"></script>
+</html>
